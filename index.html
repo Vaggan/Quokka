@@ -3,6 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Picture Viewer</title>
+    <style>
+    /* Reset default margin and padding */
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set a background color for the body */
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Center the image container */
+    #image-container {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    /* Style the image */
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 3px solid #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Optional: Add some padding and a box shadow to the image container */
+    #image-container {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
     <script>
       function fetchImage() {
           fetch('https://quokka.pics/api/')
