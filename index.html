@@ -62,8 +62,12 @@
               });
       }
       
-      fetchImage(); // Call the function to load the image on page load
-      </script>
+      // Initial call to fetchImage
+      fetchImage();
+
+      // Schedule fetchImage to run every 10 minutes (600,000 milliseconds)
+      setInterval(fetchImage, 600000);
+    </script>
 </head>
 <body>
     <div style="max-width: 100%" id="image-container"></div>
