@@ -55,7 +55,8 @@
                   img.src = imageUrl;
 
                   const imageContainer = document.getElementById('image-container');
-                  imageContainer.innerHTML(img);
+                  imageContainer.innerHTML = ''; // Clear previous image
+                  imageContainer.appendChild(img);
               })
               .catch((error) => {
                   console.error('Error fetching image:', error);
