@@ -55,7 +55,7 @@
                   img.src = imageUrl;
 
                   const imageContainer = document.getElementById('image-container');
-                  imageContainer.appendChild(img);
+                  imageContainer.innerHTML(img);
               })
               .catch((error) => {
                   console.error('Error fetching image:', error);
@@ -65,8 +65,8 @@
       // Initial call to fetchImage
       fetchImage();
 
-      // Schedule fetchImage to run every 10 minutes (600,000 milliseconds)
-      setInterval(fetchImage, 600000);
+      // Schedule fetchImage to run every 5 minutes (300,000 milliseconds)
+      setInterval(fetchImage, 300000);
     </script>
 </head>
 <body>
